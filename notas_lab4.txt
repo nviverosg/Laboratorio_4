@@ -1,0 +1,154 @@
+dispositivos electronicos
+links de github y tinkercad
+CI circuito integrado
+son chips: capa negra de resina (protege interior)
+encima numero que lo identifica
+tiene ranura y circulito
+se usa para identificar orientación
+por norma, ranura para indicar donde es adelante´
+punto circulo indica entrada 1 patita 1
+punto da la orientación y permite saber como conectarlo
+
+CI lineales
+data sheet: información de como se conecta
+y especificaciones operacionales
+tienen continuamente salida variable
+puede lograr muchisimos estados
+más que un 1 y un 0
+rango de valores de salida
+
+CI digitales
+operan a pocos niveles
+estados de 0 y 1: pasa o no pasa la corriente
+
+otra clasificación: por numero de componentes
+CI ya en si es un circuito, y tiene un monton de piezas dentro
+
+circuito 741
+amplificador operacional
+data sheet
+se muestra como funciona internamente el 741
+resistencias transistores capacitores
+al contar piezas podemos obtener clasificación por numero de componentes
+
+circuitos por funcion
+amplificadores de audio: con frecuencia que trabaja y la carga
+
+circuito 555
+se usa como temporizador
+se necesita hoja de presentacion
+
+741
+LN741 amplificador operacional
+para operaciones matematicas, circuitos que sumaban voltajes
+los hacian para las primeras calculadoras
+como es amplificador, necesito una alimentacion adicional
+tiene alta impedancia entrada
+baja impedancia salida
+
+puente H
+para controlar giro de los motores
+
+L293D el de tinkercad
+rango que trabaja7corriente con que opera
+corrientes hasta 600mA
+puente h da control de lo que quiero hacer
+pero no permite aumentar potencia
+se consideraria uso de circuits de amplificadores
+sino usar un rele y mantener circuito separado
+que de una señal y rele activa la otra corriente con mayor carga
+
+mitad de arriba y mitad de abajo, es como tener 5 puentes h
+gracia: 
+que tipo de motor puedo controlar con puente h
+un motor electrico, particularmente de corriente continua
+para entender diagrama de conexiones y funcionamiento:
+
+abrir link 555
+copiar y modificar para generar copia propia
+
+despues se compartirá link de propiedades
+circuito sirve para temporizar
+funcionamiento, se prende verde y rojo alternadamente
+codigo 555:
+no tiene codigo
+simplemente por disposición del circuito, permite dicha funcion
+resistencias de 100 kohm (arriba de 555)
+veamos si dejo en 100 ohm
+la 3 y 4
+al cambiar la 4 a 100 ohm
+osea, disminuir resistencia
+
+luego solo la resistencia 3 con 100 kohm, la 4 en 100 ohm
+la verde se mantiene prendida, y la roja casi no prende
+
+conclu: resistencias hacen que varie la frecuencia
+cual otro elemento hace variar la frecuencia: el condensador
+
+modificar comportamiento del dispositivo al modificar componentes electrónicos
+
+fpmg: nueva generacion
+puede emular varios controladores
+
+lo importante 555: usar como temporizador, sin utilizar el blink
+
+circuito nunca se reseteará, siempre trabajará del mismo modo
+forma en que varia, con disposicion de componentes que configuran el resto del circuito
+
+CIRCUITO amplificador operacional 741
+ventaja de tinkercad, mouse y dice donde conectar
+o que hace cada pata
+no existe codigo, funcionamiento esta dado por arreglo electronico del circuito
+alimentando con 9V
+se puede modificar con potenciometro 
+led indica que esta pasando corriente
+que le falta a resistencia?
+no existe resistencia de 500 ohm
+podria cambiarse a 580 o 470
+pero NO 500
+CORREGIR
+testers para visualizar comoo cambia con distintos valores
+valor que entrega patita, cuanto es?
+son los 9V
+uso mas comun: sonido
+para hacer un parlante, propio altavoz
+sirve para trabajar con motores, uno le da la señal que esta comandando el motor, y agrega alimentación para que amplifique
+con el 741, hasta 18V
+para darle salida mas fuerte a parlante, le pone 741
+desventaja: uno no lo usa para grandes tensiones, porque es una sola pieza, si se llega a quemar, o pasa cualquier cosa, puedo hacer un corto en cualquier otra parte del circuito
+
+circuito puente H
+funcionamiento:
+muestra rpm y despues cambia simbolo, de + a -
+en la vida real no es tan asi
+porque sistemas no son binarios, no pasan de un estado 1 a 0 repentinamente
+simulación virtual funciona bien
+principal: como está alimentado
+como se alimenta señal: con 5V
+mas otra señal de 9V bateria
+
+codigo
+void setup
+funcion que se llama cambia led
+el 13, y lee el 13 tambien
+13 está conectado 
+como esta leyendo si pin 13 no tengo conectado a nada
+led que trae arduino por fabrica
+en el fondo, si tengo conectado a algo
+como está hecho arduino, ya tengo el pin 13
+si lo cambio a 12, debería fallar
+
+uno trata de usar pin 13 porque tiene led de control
+
+versionar carpeta con imagenes, y codigos de puente h
+
+
+
+
+
+
+
+
+
+
+

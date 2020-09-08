@@ -1,0 +1,6 @@
+Circuito temporizador 555:
+https://www.tinkercad.com/things/blODmUIxABN
+Circuito amplificador de potencia 741:
+https://www.tinkercad.com/things/e0tMfjbEt3s
+Circuito control de motor puente H:
+https://www.tinkercad.com/things/j4D3rqb3mfj
